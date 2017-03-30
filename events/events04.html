@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Wait for browser to finish loading the page, click the button, move over or move out from the button to get the time.</p>
+
+<button onclick="displayDate()">Click me the get the get time!</button>
+<button onmouseover="displayDate()">Moves the mouse over get time!</button>
+<button onmouseout="displayDate()">Moves the mouse away to get time!</button>
+
+<script>
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo" onload="displayDate()"></p>
+
+</body>
+</html> 
