@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Errors</h1>
+
+<p>Some characters cannot be URI decoded:</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+    decodeURI("%%%");
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.name + " : " + err.message;
+}
+</script>
+
+</body>
+</html>
