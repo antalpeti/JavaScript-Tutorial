@@ -2,19 +2,25 @@
 <html>
 <body>
 
-<p>JavaScript objects are mutable.</p>
-<p>Any changes to a copy of an object will also change the original.</p>
-
 <p id="demo"></p>
 
 <script>
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
-
-var x = person;
-x.age = 10;
+var x1 = {};
+var x2 = "";
+var x3 = 0;
+var x4 = false;
+var x5 = [];
+var x6 = /()/;
+var x7 = function(){};
 
 document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";
+"x1: " + typeof x1 + "<br>" +
+"x2: " + typeof x2 + "<br>" +
+"x3: " + typeof x3 + "<br>" +
+"x4: " + typeof x4 + "<br>" +
+"x5: " + typeof x5 + "<br>" +
+"x6: " + typeof x6 + "<br>" +
+"x7: " + typeof x7 + "<br>";
 </script>
 
 </body>
