@@ -5,7 +5,8 @@
 <p id="demo"></p>
 
 <script>
-alert(document.documentElement.innerHTML);
+document.getElementById("demo").innerHTML =
+"Number of embeds: " + document.embeds.length;
 </script>
 
 </body>
